@@ -1,0 +1,311 @@
+
+.form-control::-webkit-input-placeholder {
+    color: lightgray;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgray;
+    font-style: italic;
+    font-weight: bold;
+    opacity: 1; /* Firefox */
+}
+
+.center {
+    margin: auto;
+    width: 60%;    
+    padding: 10px;
+}
+
+.circle-bordered {
+    border: 5px solid #999090 !important;
+}
+
+.img-center-display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1201px) {
+    div.modal-dialog {
+        width: 95% !important;
+    }
+
+    th.less-1200, td.less-1200, span.less-1200, div.less-1200, button.less-1200, section.less-1200, li.less-1200  {
+        display: none;        
+    }
+
+    .do-not-show-in-smaller-than-1200-screen{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 901px){
+    th.less-900, td.less-900, span.less-900, div.less-900, button.less-900, section.less-900, li.less-900 {
+        display: none;
+    }
+
+    .center {
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    img.img-center-display {
+        width: 70% !important;
+    }
+
+    .do-not-show-in-smaller-than-900-screen{
+        display:none;
+    }
+}
+
+@media screen and (min-width: 900px){
+    div.more-900, button.more-900, section.more-900, th.more-900, td.more-900, span.more-900, li.more-900 {
+        display: none;
+    }  
+    
+    .do-not-show-in-larger-than-900-screen{
+        display:none;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    div.more-1200, button.more-1200, section.more-1200, th.more-1200, td.more-1200, span.more-1200, li.more-900 {
+        display: none;
+    }
+
+    .do-not-show-in-larger-than-1200-screen{
+        display:none;
+    }
+}
+
+.default-translucent-bg:after {
+    background-color: rgb(57, 66, 69) !important; /*rgba(9, 175, 223, 0.7);*/
+}
+
+
+@media (max-width: 900px) {
+    .container-2 {        
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        /* optional */
+        -webkit-box-align: start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+    }
+
+    .container-2 .first_div {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    .container-2 .second_div {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .twitter-timeline {
+        width: 375px !important;
+    }
+}
+
+.modal-footer .btn + .btn {
+     margin-bottom: 10px !important; 
+}
+.modal-header{
+    display:block !important;
+}
+
+body {
+    color: #212529 !important;
+}
+
+.btn-link {   
+    border-color: transparent !important;
+    border:0 !important;
+    padding:0 !important;
+}
+
+.btn-link:hover {    
+    cursor: pointer !important;
+}
+
+.btn-link:disabled{
+    color:gray !important;
+}
+
+.input-disabled {
+    color: black !important;
+    font-weight: bold !important;
+}
+
+.ellipsis-300 {
+    white-space: nowrap;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+
+.ellipsis-200 {
+    white-space: nowrap;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ellipsis-100 {
+    white-space: nowrap;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-tbl-primary {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+}
+
+.btn-tbl-danger {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.btn-tbl-success {
+    background: none;
+    border: none;
+    color: forestgreen;
+    cursor: pointer;
+}
+
+.btn-tbl-warning {
+    background: none;
+    border: none;
+    color: orange;
+    cursor: pointer;
+}
+
+.btn-tbl-dark {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-tbl-disabled {
+    background: none;
+    border: none;
+    color: darkgrey;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.btn-tbl-grey {
+    background: none;
+    border: none;
+    color: darkgrey;
+    cursor: pointer;
+}
+
+.btn-tbl {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-tbl-primary:hover, .btn-tbl-danger:hover, .btn-tbl-success:hover, .btn-tbl-warning:hover, .btn-tbl-dark:hover {
+    color: grey;
+    border-bottom: 2px solid grey;
+}
+
+.btn-tbl-primary:focus, .btn-tbl-danger:focus, .btn-tbl-success:focus, .btn-tbl-warning:focus, .btn-tbl-dark:focus, .btn-tbl-grey:focus, .btn-tbl-disabled:focus {
+    outline: none;
+    border: none;
+}
+
+.label-bold-italic {
+    font-weight:bold; 
+    font-style:italic;
+}
+
+body {
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif !important;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.text-kite-blue{
+    color: rgb(42,110,187);
+}
+
+.text-kite-gold{
+    color: rgb(183,166,109);
+}
+
+.text-kite-gold-white{
+    color:floralwhite;
+}
+
+.kite-blue-bg {
+    background-color: rgb(42,110,187);
+}
+
+.kite-gold-bg {
+    background-color: rgb(183,166,109);
+}
+
+.form-control{
+    color: black !important;
+}
+
+.badge-blue {
+    color: #fff;
+    background-color: #6666ff;
+}
+
+.badge-gray {
+    color: #fff;
+    background-color: #aaa;
+}
+
+.ellipsis-div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div > .hoverd:hover {
+    background-color: #dee2e6bf;
+}
